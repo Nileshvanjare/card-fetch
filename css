@@ -1,0 +1,32 @@
+*{padding: 0;
+margin: 0;
+box-sizing: border-box;
+
+}
+.box{
+    width: 800px;
+    height: 500px;
+    border: 2px solid #333;
+    margin: 0 auto;
+    padding: 20px ;
+    position: relative;
+}
+.box1{
+    width: 200px;
+    height: 200px;
+    background-color: #000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    position: absolute;
+}
+.box2{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    transition: all 0.9s ease-in-out;
+
+}
+.box2:hover{
+    transform:perspective(400px) rotateY(-45deg)
+}
